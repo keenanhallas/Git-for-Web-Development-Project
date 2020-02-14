@@ -1,6 +1,11 @@
 https://codepen.io/k-hal/pen/KKpdJPx
 
-    1. What is Semantic HTML? 
+    1. What is Semantic HTML?
+    Semantic HTML carries meaning, which means that the tags used
+    actually signify something about the data withing the tag to us
+    and the computer. For example, an <h1> tag signifies a heading of
+    the highest importance (as in for SEO).
+
     2. What is HTML used for? 
     3. What is an attribute and where do we put it? 
     4. What is the h1 tag used for? How many times should I use it on a page?
