@@ -6,8 +6,15 @@ https://codepen.io/k-hal/pen/KKpdJPx
     and the computer. For example, an <h1> tag signifies a heading of
     the highest importance (as in for SEO).
 
-    2. What is HTML used for? 
-    3. What is an attribute and where do we put it? 
+    2. What is HTML used for?
+    HTML is used to markup sites, i.e. to define the structure of how the
+    sections of the site are laid out and grouped together.
+
+    3. What is an attribute and where do we put it?
+    HTML attributes are used to provide additional info about an HTML
+    element. It can be put in the opening tag of the element, for example
+    <a href="#">
+
     4. What is the h1 tag used for? How many times should I use it on a page?
     5. Name two tags that have required attributes
     6. What do we put in the head of our HTML document? 
