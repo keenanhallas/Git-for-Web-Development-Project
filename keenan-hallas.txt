@@ -20,7 +20,7 @@ https://codepen.io/k-hal/pen/KKpdJPx
 
     4. What is the h1 tag used for? How many times should I use it on a page?
    
-   The h1 tag represents the most important heading on a page - it basically
+    The h1 tag represents the most important heading on a page - it basically
     sums up what the entire page is about, unlike other headings which precede
     sections of a page. It's recommended to only have one h1 tag per page
     for the sake of SEO & clarity.
@@ -107,34 +107,113 @@ https://codepen.io/k-hal/pen/KKpdJPx
     
     Write the . symbol followed by the class name & curly braces:
         .class {
-            *CSS here*
+            CSS here;
         }
 
     21. How do we select a p element with a single class of “human””?
 
-        p.human {
-            *CSS here*
-        }
+     p.human {
+        CSS here;
+    }
 
     22. What is a parent child selector? When would this be useful?
 
-        
+    element element or element>element?
 
     23. How do you select all links within a div with the class of sidebar?
+
+    Which element has the class of sidebar?
+
     24. What is a pseudo selector?
+
+    Selects an element based on a specific state, for example a mouse
+    hovering over the element, a link having been clicked or not, etc.
+
     25. What do we use the change the spacing between lines?
+
+    line-height: value; (ex: 1.6)
+
     26. What do we use to change the spacing between letters?
+
+    letter-spacing: value; (ex: 3px)
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
     28. How do I add a 1px border around my div that is dotted and black?
-    29. How do I select everything on the page? 
+
+    div {
+        border-width: 1px;
+        border-style: dotted;
+        border-color: black;
+    }
+
+    or
+
+    div {
+        border: 1px dotted black;
+    }
+
+    29. How do I select everything on the page?
+
+    With *, the universal/wildcard selector:
+
+        * {
+            CSS here;
+        }
+
     30. How do I write a comment in CSS?
-    31. How do I find out what file I am in, when I am using the command line? 
+
+    /* comment here */
+
+    31. How do I find out what file I am in, when I am using the command line?
+
+    It says it in the text to the left of your cursor & username, or you
+    could also use the pwd command
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
-    33. How do I remove a file via the command line? Why do I have to be careful with this? 
-    34. Why should I use version control? 
+
+    ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+
+    You use the rm command. You have to be careful because there is no warning
+    message and the deletion is permanent.
+
+    34. Why should I use version control?
+
+    Because it allows you to track the changes in a codebase over time and
+    revert to any older version if needed. It also makes it easier to work
+    on a codebase as a group without creating conflicts between the work.
+    Additionally, it keeps the version history much more cleanly organized
+    without tons of files building up and becoming difficult to sort through.
+
     35. How often should I commit to github?
-    36. What is the command we would use to push our repo up to github? 
-    37. Walk me through Lambda's git flow. 
+
+    Very. At least once an hour, ideally more. You can't commit too often,
+    as the more you commit the more detailed your history of changes will be.
+
+    36. What is the command we would use to push our repo up to github?
+
+    In Lambda's workflow it would be git push (-u) origin fistName-lastName
+
+    37. Walk me through Lambda's git flow.
+
+        1. Fork repo to our own Github account
+        2. Add TLs as collaborators
+        3. Clone repo to our computer
+        4. cd into repo
+        5. Create a branch using our name
+        6. Add/modify files according to project
+        7. Stage files for commit with the add command
+        8. Commit files with a message
+        9. Push to Github
+        10. Create pull request using our fork as the base
+        11. Add TLs as reviewers
+        12. Submit request for review
 
 Stretch Questions
 
