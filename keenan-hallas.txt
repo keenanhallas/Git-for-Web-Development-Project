@@ -86,7 +86,7 @@ https://codepen.io/k-hal/pen/KKpdJPx
 
     17. What is CSS used for?
     
-    CSS is used to style HTML
+    CSS is used to style HTML.
 
     18. How to we select an element? Example - every h2 on the page
     
@@ -118,11 +118,16 @@ https://codepen.io/k-hal/pen/KKpdJPx
 
     22. What is a parent child selector? When would this be useful?
 
-    element element or element>element?
+    This is used to select an element that is a child (or descendant)
+    of another element, i.e. an element nested in another element. This
+    could be useful if, for example, you wanted to change the styles from
+    what the element was inheriting from its ancestors, because this
+    type of selector has a higher specificity weight than inherited
+    CSS stylings.
 
     23. How do you select all links within a div with the class of sidebar?
 
-    Which element has the class of sidebar?
+    div a.sidebar
 
     24. What is a pseudo selector?
 
@@ -218,7 +223,39 @@ https://codepen.io/k-hal/pen/KKpdJPx
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
+    
+    An inline element will start on the current/active line and only take up
+    as much space as needed (e.g. a <span>). A block element always starts on
+    a new line and will take up the full width available to it on the page
+    (e.g. a <div>).
+
+    2. What happens when an element is positioned absolutely?
+
+    An element that's positioned absolutely with be positioned relative to
+    the closest of its ancestors that has also had its position defined
+    (i.e. not an unset positioning).
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    
+    You could have a span wrapped in a div, and then define the width of
+    the div. The span will expand as needed, but no wider than the width
+    ingerited from the div.
+
+    I think that also setting the display to inline-block for an element
+    would do this as well, but I'm still trying to fully understand how this
+    feature works.
+    
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    
+    Default is Block: <header>, <section>, <footer>
+    Default is Inline: <a>, <img>
+    Default is Inline-block: <button>
+    
     5. In your own words, explain the box model. What is the fix for the box model?
+
+    The box model is the idea that all elements in HTML can be thought
+    of as boxes, consisting of the content, padding, border, and margins.
+    These concepts help visualize the styling and spacing of elements on
+    a page. The fix for the box model is box-sizing: border-box. This allows
+    the width of an element to be clearly defined, with the padding/border
+    automatically falling within this width.
